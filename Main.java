@@ -1,9 +1,12 @@
 import Behavior.Strategy;
+import Behavior.Visitor;
 import Behavior.State;
 import Struture.Adapter;
+import Struture.Composite;
 import Struture.Proxy;
 
 public class Main {
+
     public static void main(String[] args) {
         // Struture
         Adapter adapter = new Adapter();
@@ -12,6 +15,9 @@ public class Main {
         Proxy proxyAccount = new Proxy();
         proxyAccount.accountBank();
 
+        Composite composite = new Composite();
+        composite.getEmployes();
+
 
         // Behavior
         Strategy strategy = new Strategy();
@@ -19,6 +25,9 @@ public class Main {
 
         State state = new State();
         state.personActionToTraffic();
+
+        Visitor visitor = new Visitor();
+        visitor.getLocationToContries();
 
 
         // Creationals
@@ -30,5 +39,8 @@ public class Main {
 
         AbstractFactory abstractFactory = new AbstractFactory();
         abstractFactory.createButtons();
+
+        Prototype prototype = new Prototype();
+        prototype.getUsers();
     }
 }

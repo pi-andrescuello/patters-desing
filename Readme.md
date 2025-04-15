@@ -15,13 +15,16 @@ Cada clase está organizada en paquetes según su tipo y contiene ejemplos breve
 ```bash
 .
 ├── Behavior
+│   ├── Visitor.java
 │   ├── Strategy.java
 │   └── State.java
 ├── Struture
 │   ├── Adapter.java
+│   ├── Composite.java
 │   └── Proxy.java
 ├── Creational
 │   ├── Singleton.java
 │   ├── FactoryMethod.java
+│   ├── Prototype.java
 │   └── AbstractFactory.java
 └── Main.java
